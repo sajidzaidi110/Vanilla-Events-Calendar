@@ -1,4 +1,4 @@
-var todos = [];
+let todos = [];
 const todoInput = document.getElementById('todoInput');
 const addTodoButton = document.getElementById('addTodo');
 const todoList = document.getElementById('todoList');
@@ -49,7 +49,7 @@ function toggleTodo(index) {
 
 //// Delete a Todo
 function deleteTodo(index) {
-    var childEl = todoList.children[index];
+    let childEl = todoList.children[index];
     todoList.removeChild(childEl);
     todos.splice(index, 1);
     render();
@@ -57,13 +57,13 @@ function deleteTodo(index) {
 
 // Edit a Todo
 function editTodo(index) {
-    var childEl = todoList.children[index].querySelector('.input-text');
+    let childEl = todoList.children[index].querySelector('.input-text');
     childEl.ondblclick = function () {
-        var val = this.innerHTML;
-        var input = document.createElement("input");
+        let val = this.innerHTML;
+        let input = document.createElement("input");
         input.value = val;
         input.onblur = function () {
-            var val = this.value;
+            let val = this.value;
             this.parentNode.innerHTML = val;
             render();
         }
