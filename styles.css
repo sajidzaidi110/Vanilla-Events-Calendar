@@ -1,0 +1,89 @@
+body,
+h1,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #aca6b1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.handwritten {
+    font-size: 30px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.d-none {
+    display: none;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 120px auto;
+    background-color: #ffffffc2;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+}
+
+#todoInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+#addTodo {
+    background-color: #f0bf19;
+}
+
+.btn {
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#todoList {
+    list-style: none;
+    padding: 0;
+}
+
+#todoList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.complete-btn {
+    background-color: #44e951;
+}
+
+.delete-btn {
+    background-color: #e41212;
+}
